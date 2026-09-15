@@ -2,7 +2,7 @@
 
 This unit covers heap-based sorting, divide-and-conquer array analysis, sorting algorithms, and fast matrix multiplication.
 
-**Progressive version:** 1 — 2 of 5 programs documented.
+**Progressive version:** 2 — 4 of 5 programs documented.
 
 ## Programs
 
@@ -34,6 +34,34 @@ This unit covers heap-based sorting, divide-and-conquer array analysis, sorting 
 
 *Output screenshot: `Outputs/MaxMin.png`*
 
+### 3. Merge Sort (`MergeSort.cpp`)
+
+**Approach:** Recursively splits the array into halves and merges the sorted halves using a temporary vector.
+
+- **Time complexity:** O(n log n) in best, average, and worst cases.
+- **Space complexity:** O(n) auxiliary space for merging, plus O(log n) recursion stack.
+- **Program behavior:** Reads 6 integers from standard input and prints the original and sorted arrays.
+
+**Output:**
+
+![Merge Sort output](Outputs/MergeSort.png)
+
+*Output screenshot: `Outputs/MergeSort.png`*
+
+### 4. Quick Sort (`QuickSort.cpp`)
+
+**Approach:** Uses the first element as pivot, partitions the range around it, and recursively sorts the two partitions.
+
+- **Time complexity:** Average: O(n log n); worst: O(n²).
+- **Space complexity:** Average: O(log n) recursion stack; worst: O(n).
+- **Program behavior:** Reads 6 integers from standard input and prints the original and sorted arrays.
+
+**Output:**
+
+![Quick Sort output](Outputs/QuickSort.png)
+
+*Output screenshot: `Outputs/QuickSort.png`*
+
 ## Compile and run
 
 Compile an individual source file using a C++17 compiler:
@@ -56,4 +84,3 @@ Replace `ProgramName.cpp` with the source file you want to run. Programs that re
 
 - Each C++ source file is a standalone program and should be compiled separately.
 - Output images are stored in the adjacent `Outputs/` folder and are embedded using relative Markdown paths.
-- Keep the `Outputs/` folder alongside `README.md` so images render correctly on GitHub.
