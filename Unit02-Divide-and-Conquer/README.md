@@ -2,7 +2,7 @@
 
 This unit covers heap-based sorting, divide-and-conquer array analysis, sorting algorithms, and fast matrix multiplication.
 
-**Progressive version:** 2 — 4 of 5 programs documented.
+**Progressive version:** 3 — 5 of 5 programs documented.
 
 ## Programs
 
@@ -62,6 +62,20 @@ This unit covers heap-based sorting, divide-and-conquer array analysis, sorting 
 
 *Output screenshot: `Outputs/QuickSort.png`*
 
+### 5. Strassen Matrix Multiplication (`StrassenMatrixMultiplicaton.cpp`)
+
+**Approach:** Divides square matrices into four submatrices and uses seven recursive matrix multiplications, then combines the results. The program also compares the result with conventional multiplication.
+
+- **Time complexity:** O(n^log₂7) ≈ O(n²·⁸⁰⁷).
+- **Space complexity:** O(n²) or more auxiliary storage for matrix temporaries and recursive calls.
+- **Program behavior:** Uses predefined 4×4 matrices, prints the product, validates it against normal multiplication, and compares multiplication counts for several sizes. Matrix dimensions must be powers of two.
+
+**Output:**
+
+![Strassen Matrix Multiplication output](Outputs/Strassen.png)
+
+*Output screenshot: `Outputs/Strassen.png`*
+
 ## Compile and run
 
 Compile an individual source file using a C++17 compiler:
@@ -84,3 +98,4 @@ Replace `ProgramName.cpp` with the source file you want to run. Programs that re
 
 - Each C++ source file is a standalone program and should be compiled separately.
 - Output images are stored in the adjacent `Outputs/` folder and are embedded using relative Markdown paths.
+- Keep the `Outputs/` folder alongside `README.md` so images render correctly on GitHub.
