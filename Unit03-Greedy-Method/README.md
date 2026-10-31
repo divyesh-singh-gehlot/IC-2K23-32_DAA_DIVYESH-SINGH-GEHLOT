@@ -2,7 +2,7 @@
 
 This unit covers greedy optimization techniques, job scheduling, and minimum spanning tree algorithms.
 
-**Progressive version:** 1 — 1 program documented.
+**Progressive version:** 2 — 2 programs documented.
 
 ## Programs
 
@@ -19,6 +19,21 @@ This unit covers greedy optimization techniques, job scheduling, and minimum spa
 ![Fractional Knapsack output](Outputs/FractionalKnapsack.png)
 
 *Output screenshot: `Outputs/FractionalKnapsack.png`*
+
+
+### 2. Job Sequencing with Deadlines (`JobSequencing.cpp`)
+
+**Approach:** Sorts jobs by descending profit and schedules each job in the latest free slot at or before its deadline.
+
+- **Time complexity:** O(n log n + nD), where D is the maximum deadline; worst case O(n²) when D = O(n).
+- **Space complexity:** O(D) for the scheduling slots.
+- **Program behavior:** Uses predefined jobs and prints the sorted jobs, selected sequence, completed job count, and total profit.
+
+**Output:**
+
+![Job Sequencing with Deadlines output](Outputs/JobSequencing.png)
+
+*Output screenshot: `Outputs/JobSequencing.png`*
 
 
 
