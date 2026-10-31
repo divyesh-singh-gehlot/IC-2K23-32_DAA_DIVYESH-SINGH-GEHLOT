@@ -2,7 +2,7 @@
 
 This unit covers greedy optimization techniques, job scheduling, and minimum spanning tree algorithms.
 
-**Progressive version:** 2 — 2 programs documented.
+**Progressive version:** 4 — 4 programs documented.
 
 ## Programs
 
@@ -34,6 +34,36 @@ This unit covers greedy optimization techniques, job scheduling, and minimum spa
 ![Job Sequencing with Deadlines output](Outputs/JobSequencing.png)
 
 *Output screenshot: `Outputs/JobSequencing.png`*
+
+
+### 3. Kruskal's Minimum Spanning Tree (`KruskalsAlgorithm.cpp`)
+
+**Approach:** Sorts edges by increasing weight and adds an edge only if its endpoints belong to different disjoint sets, preventing cycles.
+
+- **Time complexity:** O(E log E), dominated by edge sorting; disjoint-set operations are near-constant amortized.
+- **Space complexity:** O(V) for the disjoint-set parent structure, excluding the edge list.
+- **Program behavior:** Uses a predefined weighted graph and prints the MST edges and total cost.
+
+**Output:**
+
+![Kruskal's Minimum Spanning Tree output](Outputs/Kruskal.png)
+
+*Output screenshot: `Outputs/Kruskal.png`*
+
+
+### 4. Prim's Minimum Spanning Tree (`PrimsAlgorithm.cpp`)
+
+**Approach:** Starts at vertex 0 and repeatedly adds the not-yet-included vertex with the smallest key, updating neighboring keys and parent links.
+
+- **Time complexity:** O(V²) with the adjacency-matrix implementation.
+- **Space complexity:** O(V²) for the graph matrix and O(V) for supporting arrays.
+- **Program behavior:** Uses a predefined weighted graph and prints the MST edges and total cost.
+
+**Output:**
+
+![Prim's Minimum Spanning Tree output](Outputs/Prims.png)
+
+*Output screenshot: `Outputs/Prims.png`*
 
 
 
